@@ -1,10 +1,9 @@
 import 'package:dating_app/WelcomePage.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main(){
   runApp(DatingApp());
 }
-
 
 class DatingApp extends StatelessWidget {
   const DatingApp({super.key});
