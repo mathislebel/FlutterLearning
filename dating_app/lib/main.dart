@@ -2,6 +2,9 @@ import 'package:dating_app/WelcomePage.dart';
 import 'package:flutter/material.dart';
 
 
+void main(){
+  runApp(DatingApp());
+}
 class DatingApp extends StatelessWidget {
 
   @override
