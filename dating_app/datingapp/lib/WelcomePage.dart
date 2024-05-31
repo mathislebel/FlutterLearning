@@ -1,3 +1,4 @@
+import 'package:datingapp/MyEmail.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,6 +17,16 @@ class _WelcomePageState extends State<WelcomePage> {
         elevation: 0,
         backgroundColor: Color(0xff101010),
       ),
+      body: Center(child: ElevatedButton(
+        onPressed: (){
+          Navigator.push(
+            context, 
+            MaterialPageRoute(
+              builder: (context) => ProfileDetailsPage()
+            ),
+          );
+        }, 
+        child: Text('suivant'),),),
     );
   }
 }
