@@ -148,7 +148,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage> {
                       IconButton(
                         onPressed: () {
                           setState(() {
-                            selectedDate = DateTime(selectedDate.year - 1, selectedDate.month, selectedDate.day);
+                            selectedDate = DateTime(selectedDate.year, selectedDate.month -1, selectedDate.day);
                           });
                         },
                         icon: Icon(Icons.arrow_left, color: Colors.black),
@@ -177,7 +177,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage> {
                       IconButton(
                         onPressed: () {
                           setState(() {
-                            selectedDate = DateTime(selectedDate.year + 1, selectedDate.month, selectedDate.day);
+                            selectedDate = DateTime(selectedDate.year, selectedDate.month +1, selectedDate.day);
                           });
                         },
                         icon: Icon(Icons.arrow_right, color: Colors.black),

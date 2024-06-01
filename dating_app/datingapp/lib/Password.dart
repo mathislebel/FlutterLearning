@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:datingapp/Profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -63,7 +64,11 @@ class _MyPasswordState extends State<MyPassword> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                 ElevatedButton(
-                  onPressed: (){}, 
+                  onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileDetailsPage(),
+                      ),
+                    );
+                  }, 
                   style: ElevatedButton.styleFrom(
                     backgroundColor:Color(0xFFE94057),
                      padding: EdgeInsets.symmetric(horizontal: 50),
