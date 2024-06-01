@@ -1,4 +1,5 @@
 import 'package:datingapp/MyEmail.dart';
+import 'package:datingapp/Profile.dart';
 import 'package:flutter/material.dart';
 
 
@@ -22,7 +23,7 @@ class _WelcomePageState extends State<WelcomePage> {
           Navigator.push(
             context, 
             MaterialPageRoute(
-              builder: (context) => ProfileDetailsPage()
+              builder: (context) => MyEmail()
             ),
           );
         }, 

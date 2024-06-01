@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:datingapp/Password.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -8,14 +7,14 @@ import 'package:http/http.dart';
 import 'package:datingapp/widget/delayAnimation.dart';
 
 
-class MyEmail extends StatefulWidget {
-  const MyEmail({super.key});
+class MyPassword extends StatefulWidget {
+  const MyPassword({super.key});
 
   @override
-  State<MyEmail> createState() => _MyEmailState();
+  State<MyPassword> createState() => _MyPasswordState();
 }
 
-class _MyEmailState extends State<MyEmail> {
+class _MyPasswordState extends State<MyPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +30,7 @@ class _MyEmailState extends State<MyEmail> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'My Email',
+                  'My Password',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 30,
@@ -40,7 +39,7 @@ class _MyEmailState extends State<MyEmail> {
                     ),
                   ),
                   Text(
-                    'Please enter your valid email. We will send you a 4-digit code to verify your account. ',
+                    'Please select a secure password. ',
                     style: TextStyle(
                       color: Colors.black,
                        fontSize: 13,
@@ -51,7 +50,7 @@ class _MyEmailState extends State<MyEmail> {
                 TextField(
                  style: TextStyle(color: Colors.black),
                  decoration: InputDecoration(
-                  hintText: 'Email',
+                  hintText: 'Password',
                   border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15), 
                   ),
@@ -64,14 +63,7 @@ class _MyEmailState extends State<MyEmail> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                 ElevatedButton(
-                  onPressed: (){
-                    Navigator.push(
-                      context, 
-                      MaterialPageRoute(
-                        builder: (context) => MyPassword(),
-                        ),
-                      );
-                  }, 
+                  onPressed: (){}, 
                   style: ElevatedButton.styleFrom(
                     backgroundColor:Color(0xFFE94057),
                      padding: EdgeInsets.symmetric(horizontal: 50),
