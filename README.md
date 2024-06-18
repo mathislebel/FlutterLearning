@@ -103,6 +103,39 @@ A project using the map API in Flutter.
 
 To run any of the projects in this repository, follow these steps:
 
-1. **Clone the repository:**
+1. **Clone the repository:**  
+   To get a copy of the projects on your local machine, use the following command:
    ```bash
    git clone https://github.com/mathislebel/flutter-exam-projects.git
+2. **Navigate to the project directory:**  
+Move into the directory of the specific project you want to work on:
+
+```bash
+cd flutter-exam-projects/<project-folder>
+```
+3. **Install dependencies:**
+Each project uses various dependencies that need to be installed. Before launching the project, open a terminal in Visual Studio Code and run the following command to install the necessary packages:
+
+```bash
+flutter pub get
+```
+4. **Running the Project**
+
+Once the dependencies are installed, you can start the project using the following command:
+
+```bash
+flutter run
+```
+## Technologies Used
+
+- **Languages**: Dart, C++, C#, Swift, Python, Assembly
+- **Frameworks**: Flutter
+- **Tools**: Visual Studio Code
+
+## Contributors
+
+- Mathis LEBEL - GitHub
+- Séréna BAVAROIS - GitHub
+
+
+
