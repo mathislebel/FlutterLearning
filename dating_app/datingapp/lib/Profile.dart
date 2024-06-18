@@ -149,7 +149,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage> {
                         onPressed: () {
                           setState(() {
                             selectedDate = DateTime(selectedDate.year, selectedDate.month -1, selectedDate.day);
-                          });
+                          });;
                         },
                         icon: Icon(Icons.arrow_left, color: Colors.black),
                       ),
